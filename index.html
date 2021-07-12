@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>TOTV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="./favicon.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/galaxy.jpg");
+  min-height: 75%;
+}
+
+.characters {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#characters" class="w3-button w3-block w3-black">CHARACTERS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#lore" class="w3-button w3-block w3-black">LORE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Start Date: TBD</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:100px"><font face="Cormorant">Titans<br><font style="font-size:70px" color="#50677a">of the</font><br>Void</font></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Session Schedule: TBD</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-blue grey w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT TOTV</span></h5>
+    <p>A distant and unique solar system, home to industrious inventors, ruthless cutthroats, and bewildering creatures. The only thing rarer than it's star, are the strange, small nebulae woven between it's planets.</p>
+    <p>Our adventurers all begin as citizens of Vitalion, a very small but beautiful planet. There is only one continent, a large volcanic island. The climate is chilly and precipitous, 77F at the equator and an average of 10F at the southernmost and northernmost reaches.  The planet is sparsely populated, but there are two governing bodies, Kigania in the East and Wendenta in the West. Vitalion is primarily a mining planet, but it is also known for producing some of the best ship making lumber in the solar system.
+    </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>“Believe something and the Universe is on its way to being changed. Because you've changed, by believing. Once you've changed, other things start to follow. Isn't that the way it works?”</i></p>
+      <p>― Diane Duane, So You Want to Be a Wizard</p>
+    </div>
+    <img src="/assets/nebula.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+  <p class="w3-center"><strong>Discord: </strong><a href="https://discord.com/channels/863904409636569091/863904412911796255">Voila</a></p>
+
+</div>
+
+<!-- Characters Container -->
+<div class="w3-container" id="characters">
+    <div class="w3-content" style="max-width:700px">
+   
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE CHARACTERS</span></h5>
+    
+      <div class="w3-row w3-center w3-card w3-padding">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'PC');" id="myLink">
+          <div class="w3-col s6 tablink">PC</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'NPC');">
+          <div class="w3-col s6 tablink">NPC</div>
+        </a>
+      </div>
+  
+      <div id="PC" class="w3-container characters w3-padding-48 w3-card">
+        <h5>Kelsey:</h5>
+        <p class="w3-text-black">TBD</p><br>
+      
+        <h5>Jake:</h5>
+        <p class="w3-text-black">TBD</p><br>
+      
+        <h5>Hanna:</h5>
+        <p class="w3-text-black">TBD</p><br>
+      
+        <h5>Colt:</h5>
+        <p class="w3-text-black">TBD</p><br>
+      
+      </div>
+  
+      <div id="NPC" class="w3-container characters w3-padding-48 w3-card">
+        <h5>TBD:</h5>
+        <p class="w3-text-black">TBD</p><br>
+      
+        <h5>TBD:</h5>
+        <p class="w3-text-black">TBD</p><br>
+      
+        <h5>TBD:</h5>
+        <p class="w3-text-black">TBD</p><br>
+      
+        <h5>TBD:</h5>
+        <p class="w3-text-black">TBD</p><br>
+
+      </div>  
+      <img src="/assets/airship.jfif" style="width:100%;max-width:1000px;margin-top:32px;">
+    </div>
+  </div>
+  
+<!-- Lore Container -->
+<div class="w3-container" id="lore" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LORE</span></h5>
+      <p class="w3-center">Coming soon, to track in-game updates and discoveries.</p>
+    </div>
+  </div>
+  
+  <!-- End page content -->
+  </div>
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-large">
+    <P>© EclecticLogic
+        <script type="text/JavaScript">
+            document.write(new Date().getFullYear());
+        </script>
+    </P>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("characters");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
